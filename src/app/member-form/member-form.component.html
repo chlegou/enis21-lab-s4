@@ -1,7 +1,7 @@
 
 <h4>Create new Member</h4>
 
-<form [formGroup]="form" *ngIf="!!form" (ngSubmit)="onSubmit()">
+<form [formGroup]="form" *ngIf="!!form" (ngSubmit)="onSubmit()" class="form" fxLayout="column">
   <mat-form-field>
     <input matInput placeholder="cin" formControlName="cin">
   </mat-form-field>
