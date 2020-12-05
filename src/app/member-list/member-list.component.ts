@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {GLOBAL} from '../app-config';
 import {MemberService} from '../../services/member.service';
+import {Member} from '../../models/member.model';
 
 @Component({
   selector: 'app-member-list',
@@ -10,7 +10,7 @@ import {MemberService} from '../../services/member.service';
 export class MemberListComponent implements OnInit {
   displayedColumns: string[] = ['id', 'cin', 'name', 'type', 'cv', 'createdDate'];
 
-  dataSource: any[] = [];
+  dataSource: Member[] = [];
 
   constructor(
     private memberService: MemberService,
